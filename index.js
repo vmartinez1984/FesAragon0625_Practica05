@@ -12,7 +12,7 @@ const {
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
-app.get("/", (req, res) => {
+app.get("", (req, res) => {
   res.json({ mensaje: "Hola mundo" });
 });
 
