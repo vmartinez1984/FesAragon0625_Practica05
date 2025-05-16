@@ -1,7 +1,6 @@
 //Configuración de base de datos
 var MongoClient = require("mongodb").MongoClient;
-var url = "mongodb+srv://superiorviktor:4hzYZt1lSTcBCycU@cluster0.53l4ojb.mongodb.net/";
-//var url = "mongodb://root:123456@localhost:27017/?authMechanism=DEFAULT";
+var url = "mongodb://root:123456@localhost:27017/?authMechanism=DEFAULT";
 const baseDeDatos = "FesAragon";
 const coleccion = "Peliculas";
 
