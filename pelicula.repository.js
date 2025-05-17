@@ -1,10 +1,13 @@
+const dotenv = require('dotenv').config();
 //Configuración de base de datos
 var MongoClient = require("mongodb").MongoClient;
-var url = "mongodb://root:123456@localhost:27017/?authMechanism=DEFAULT";
+//var url = "mongodb://root:123456@localhost:27017/?authMechanism=DEFAULT";
+var url = process.env.url
 const baseDeDatos = "FesAragon";
 const coleccion = "Peliculas";
 
 async function conectarAlaDbAsync() {
+  console.log(url)
   const client = new MongoClient(url);
   await client.connect();
   const db = client.db(baseDeDatos);
