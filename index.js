@@ -1,6 +1,7 @@
 //Liberia que nos ayuda a gestionar la aplicación web
 const express = require("express");
 const app = express();
+var cors = require('cors')
 
 //Lamamos al repositorio
 const {
@@ -9,6 +10,8 @@ const {
   obtenerTodos,
 } = require("./pelicula.repository");
 
+
+app.use(cors()) //Permite el consumo desde una app html
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
