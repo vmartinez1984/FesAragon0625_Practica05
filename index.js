@@ -1,7 +1,7 @@
 //Liberia que nos ayuda a gestionar la aplicación web
 const express = require("express");
-const app = express();
 var cors = require('cors')
+const app = express();
 
 //Lamamos al repositorio
 const {
